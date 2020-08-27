@@ -1,0 +1,99 @@
+:root {
+  --RocketColor: #7159c1;
+}
+/*============C A R D S===============*/
+#wrapper_classes {
+  margin: 1rem 0;
+
+  text-align: center;
+}
+#wrapper_classes h1{
+  font-size: 45px;
+  color: white;
+}
+#_Cards {
+  background-color: rgba(0, 0, 0, 0.226);
+  padding:1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  max-width: 1000px;
+  margin: 0 auto;
+  gap: 1rem;
+}
+._Card {
+  background-color: var(--RocketColor);
+  color: white;
+  cursor: pointer;
+
+  
+}
+._CImageContainer img {
+  width: 100%;
+}
+._CContentContainer,
+._CInformationContainer {
+  padding: 24px;
+}
+._CInformationContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+
+}
+._CICPrice {
+  background-color: var(--RocketColor);
+  filter: brightness(90%);
+  border-radius: 1rem;
+  padding: auto 5rem;
+
+}
+._CICPrice:hover {
+  color: yellow;
+}
+
+
+
+.modal-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  opacity: 0;
+  visibility: hidden;
+
+
+}
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal {
+  background-color: rgb(32, 32, 46);
+  width: 90%;
+  height: 90%;
+  /* padding: 1.2rem; */
+  margin: 5vh auto;
+  position: relative;
+}
+.modal .close-modal {
+  position: absolute;
+  right: .5rem;
+  top: .5rem;
+  cursor: pointer;
+
+
+}
+.modal .close-modal:hover {
+  transition: all 400ms;
+  color: white;
+  margin: auto;
+}
+
+.modal-overlay .modal-content iframe {
+  width: 100%;
+  height: 90%;
+  position: absolute;
+  top: 5%;
+}

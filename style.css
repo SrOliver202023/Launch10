@@ -1,0 +1,75 @@
+@import "https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@500&display=swap";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Libre Franklin';}
+:root {
+  --M_Green: #50fa7b;
+
+}
+
+
+body {
+  background-color: #282a36; 
+}
+header {
+  background-color: rgba(7, 7, 7, 0.472);
+  border-bottom: 2px solid white;
+  padding: 32px;
+}
+header div {
+  text-align: center;
+
+}
+.links a {
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+  margin: 0 16px;
+  text-decoration: none;
+}
+.links a:hover {
+  color: var(--M_Green);
+  transition: .6s;
+}
+#wrapper {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding-top: 32px;
+}
+#wrapper img {
+  border-radius: 50%;
+  border: 5px solid var(--M_Green);
+  margin-bottom: 32px;
+  height: 300px;
+}
+#wrapper h1 {
+  font-size: 44px;
+  line-height: 54px;
+  font-weight: bold;
+}
+#wrapper h2 {
+  font-size: 26px;
+  line-height: 36px;
+  font-weight: bold;
+
+}
+#wrapper p {
+  font-size: 22px;
+  margin: 5px auto;
+  max-width: 45rem;
+  font-weight: normal;
+}
+#wrapper a {
+  color: var(--M_Green);
+}
+#userlinks {
+  margin-top: 6rem;
+  text-align: center;
+}
+#userlinks a {
+  border-bottom: 2px solid var(--M_Green);
+}
+
