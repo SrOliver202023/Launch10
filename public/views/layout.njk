@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {% block head %}
+    <title>Mayke Brito</title>
+    {% endblock %}
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/classes.css">
+
+  </head>
+  <body>
+    <header>
+      <div class="links">
+        <a href="/">About</a>
+        <a href="portfolio.html">Classes</a>
+
+      </div>
+    </header>
+    {% block content %}{% endblock %}
+  </body>
+</html>

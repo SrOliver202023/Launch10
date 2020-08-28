@@ -1,0 +1,53 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  rel="stylesheet">
+
+{% endblock %}
+{% block content %}
+
+  <div id="wrapper_classes">
+    <h1>Classes</h1>
+  </div>
+
+  <section id="_Cards">
+
+    {% for item in items %}
+      <div class="_Card" id="{{ item.id }}"> <!--Formulario Animado-->
+        <div class="_CImageContainer">
+          <img src="https://img.youtube.com/vi/{{ item.id }}/maxresdefault.jpg" alt="">
+          <img src="{{ item.image }}" alt="">
+        </div>
+        <div class="_CContentContainer">
+          <p>{{ item.title}}</p>
+        </div>
+        <div class="_CInformationContainer">
+          <p>
+            {% if item.time < 60 %}
+              {{ item.time }} min
+            {% elif item.time > 60 %}
+              {{ item.time / 60}} hours
+            {% endif %}
+
+          </p>
+          <p class="_CICPrice">{{ item.price }}</p>
+        </div>
+      </div>
+    {% endfor %}
+
+  </section>
+
+  <div class="modal-overlay">
+    <div class="modal">
+      <a class="close-modal">
+        <span class="material-icons">close</span>
+      </a>
+      <div class="modal-content">
+          <iframe src="" frameborder="0"></iframe>
+      </div>
+    </div>
+  </div>
+  <script src="/scripts/scripts.js"></script>
+{% endblock %}
