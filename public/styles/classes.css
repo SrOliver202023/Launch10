@@ -102,3 +102,22 @@
   position: absolute;
   top: 5%;
 }
+
+ 
+.featured-wrapper._CImageContainer {
+  position: relative;
+}
+
+.featured {
+  position: absolute;
+  color: var(--RocketColor);
+  border-radius: 1rem;
+  background: rgb(164, 155, 206);
+  font-size: 1.5rem;
+  top: -15px;
+  right: 25%;
+  height: 2rem;
+  width: 10rem;
+  text-align: center;
+
+}

@@ -14,25 +14,27 @@
 
   <section id="_Cards">
 
-    {% for item in items %}
-      <div class="_Card" id="{{ item.id }}"> <!--Formulario Animado-->
-        <div class="_CImageContainer">
-          <img src="https://img.youtube.com/vi/{{ item.id }}/maxresdefault.jpg" alt="">
-          <img src="{{ item.image }}" alt="">
+    {% for video in videos %}
+      <div class="_Card" id="{{ video.id }}"> <!--Formulario Animado-->
+        <div class="_CImageContainer {{ 'featured-wrapper' if video.featured }}">
+          <img src="https://img.youtube.com/vi/{{ video.id }}/maxresdefault.jpg" alt="">
+          {% if video.featured %}
+            <div class="featured"> Featured </div>
+
+          {% endif%}
         </div>
         <div class="_CContentContainer">
-          <p>{{ item.title}}</p>
+          <p>{{ video.title}}</p>
         </div>
         <div class="_CInformationContainer">
           <p>
-            {% if item.time < 60 %}
-              {{ item.time }} min
-            {% elif item.time > 60 %}
-              {{ item.time / 60}} hours
+            {% if video.time < 60 %}
+              {{ video.time }} min
+            {% elif video.time > 60 %}
+              {{ video.time / 60 }} hours
             {% endif %}
-
           </p>
-          <p class="_CICPrice">{{ item.price }}</p>
+          <p class="_CICPrice">{{ video.price }}</p>
         </div>
       </div>
     {% endfor %}

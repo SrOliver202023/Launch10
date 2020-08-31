@@ -3,7 +3,8 @@ module.exports = [
     id:"GykTLqODQuU",
     title:"Animated form with pure JS and CSS Animation | Mayk Brito",
     time: 57,
-    price: "Free"
+    price: "Free",
+    featured: true
   },
   {
     id:"2alg7MQ6_sI",
@@ -15,7 +16,9 @@ module.exports = [
     id:"HN1UjzRSdBk",
     title:"Unveiling CSS Grid in practice | Mayk Brito",
     time: 36,
-    price: "Free"
+    price: "Free",
+    featured: true
+
   }
 
 ]
